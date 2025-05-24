@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Search</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .result-item {
+            background-color: #ffffff;
+            border-left: 4px solid #007bff;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .result-item:hover {
+            transform: translateY(-3px);
+        }
+        .ai-icon {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="search-container">
+            <h1 class="text-center mb-4">
+                <i class="bi bi-robot"></i> AI-Powered Search
+            </h1>
+            <form action="ai" id="ai" class="mb-4">
+                <div class="input-group">
+                    <input type="text" name="aidata" class="form-control" placeholder="Enter your search query..." aria-label="Search query" required>
+                    <button class="btn btn-primary" type="submit">
+                        <i class="bi bi-search"></i> Search
+                    </button>
+                </div>
+            </form>
+            <div id="results" class="mt-4">
+                <!-- Search results will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const query = document.getElementById('search-input').value;
+            const resultsContainer = document.getElementById('results');
+            
+            // Clear previous results
+            resultsContainer.innerHTML = '<div class="text-center"><div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span></div></div>';
+            
+            // Simulate API call (replace with actual API call in production)
+            setTimeout(() => {
+                const sampleResults = [
+                    "AI-powered insight on " + query,
+                    "Machine learning analysis of " + query,
+                    "Deep neural network findings related to " + query,
+                    "Artificial intelligence discoveries about " + query
+                ];
+                
+                resultsContainer.innerHTML = '<h2 class="mb-3">Search Results</h2>';
+                sampleResults.forEach(result => {
+                    resultsContainer.innerHTML += `
+                        <div class="result-item">
+                            <i class="bi bi-cpu ai-icon"></i>
+                            ${result}
+                        </div>
+                    `;
+                });
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

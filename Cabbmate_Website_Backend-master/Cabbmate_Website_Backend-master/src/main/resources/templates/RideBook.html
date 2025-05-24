@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Created Successfully</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .success-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .ride-details {
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .ride-details p {
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>Ride Created Successfully!</h1>
+        <p>Your ride has been successfully scheduled. Here are the details:</p>
+        
+        <div class="ride-details">
+            <p><strong>Pickup:</strong> <span th:text="${ride.pickupLocation}"></span></p>
+            <p><strong>Destination:</strong> <span th:text="${ride.destination}"></span></p>
+            <p><strong>Date:</strong> <span th:text="${#temporals.format(ride.date, 'MMMM dd, yyyy')}"></span></p>
+            <p><strong>Time:</strong> <span th:text="${#temporals.format(ride.time, 'HH:mm')}"></span></p>
+            <p><strong>Passengers:</strong> <span th:text="${ride.passengers}"></span></p>
+            <p><strong>Vehicle Type:</strong> <span th:text="${ride.vehicleType}"></span></p>
+        </div>
+        
+        <a href="/rides" class="btn">View All Rides</a>
+    </div>
+</body>
+</html>

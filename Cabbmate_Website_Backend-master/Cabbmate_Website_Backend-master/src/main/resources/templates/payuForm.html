@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Redirecting to PayU</title>
+</head>
+<body onload="document.forms[0].submit()">
+    <h3>Redirecting to PayU...</h3>
+    <form action="https://test.payu.in/_payment" method="post">
+        <!-- Mandatory Fields -->
+        <input type="hidden" name="key" th:value="${key}" />
+        <input type="hidden" name="txnid" th:value="${txnid}" />
+        <input type="hidden" name="amount" th:value="${amount}" />
+        <input type="hidden" name="productinfo" th:value="${productinfo}" />
+        <input type="hidden" name="firstname" th:value="${firstname}" />
+        <input type="hidden" name="email" th:value="${email}" />
+        <input type="hidden" name="phone" th:value="${phone}" />
+        <input type="hidden" name="surl" th:value="${surl}" />
+        <input type="hidden" name="furl" th:value="${furl}" />
+        <input type="hidden" name="hash" th:value="${hash}" />
+        <!-- Submit Button (optional if auto-submit fails) -->
+        <button type="submit">Proceed to PayU</button>
+    </form>
+</body>
+</html>
