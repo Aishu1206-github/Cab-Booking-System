@@ -1,0 +1,41 @@
+.opacity-hover {
+  transition: opacity 0.2s; /* Smooth transition */
+}
+
+.opacity-hover:hover {
+  opacity: 0.8; /* Decrease opacity on hover */
+}
+
+.react-datepicker__input-container input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+/* Initially style today's date like selected date */
+/* Highlight today initially */
+/* Initially highlight today’s date */
+.react-datepicker__day--today.highlight-today {
+  background-color: #28a745 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+/* Selected date */
+.react-datepicker__day--selected {
+  background-color: #28a745 !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+/* Remove focus outline */
+.react-datepicker__day:focus {
+  outline: none !important;
+}
+
+.react-datepicker__input-container input::placeholder {
+  color: white !important;
+}
+
+.react-datepicker__input-container input {
+  color: white !important;
+}

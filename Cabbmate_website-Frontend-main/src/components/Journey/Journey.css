@@ -1,0 +1,15 @@
+.custom-placeholder::placeholder {
+    color: white !important;
+    opacity: 1; /* Ensure the color applies fully */
+  }
+
+  .react-dropdown-placeholder {
+    color: white; /* Placeholder color */
+    background-color: black;
+  }
+  
+  .react-dropdown-select {
+    background-color: black; /* Dropdown background color */
+    color: white; /* Text color */
+    border-color: white; /* Border color */
+  }

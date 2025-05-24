@@ -1,0 +1,28 @@
+.container-fluid.d-flex.justify-content-center.bg-grey.align-items-center.mb-4 {
+    height: 100vh;
+    
+}
+
+
+.logo{
+    height: 50px;
+    width: 60px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px; /* Optional: Adds some space below the logo */
+}
+button[type="login"] {
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+  }
+  
+  button[type="login"]:hover {
+    background-color: #4cb03a; /* Darker shade on hover */
+  }
+  
+  button[type="login"]:active {
+    transform: translateY(0); /* Reset lift on click */
+  }

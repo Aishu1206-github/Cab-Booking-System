@@ -1,0 +1,118 @@
+/* Fullscreen background */
+.fullscreen-background {
+    background-color: #000; /* Black background color */
+    width: 100vw; /* Full width of the viewport */
+    min-height: 100vh; /* Full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Space to avoid touching the navbar */
+  }
+  
+  /* Navbar customization */
+  .navbar-light {
+    background-color: white; /* Set navbar background to white */
+    padding-left: 30px; /* Increase left padding */
+    padding-right: 30px; /* Increase right padding */
+  }
+  
+  .navbar-brand .brand-text {
+    font-size: 1.5rem; /* Increase size of "CABBMATE" text */
+    color: black; /* Set color of "CABBMATE" text to black */
+    font-weight: bold; /* Keep "CABBMATE" bold */
+  }
+  
+  .nav-item-text {
+    font-size: 1.2rem; /* Increase size of other navbar components */
+    color: black; /* Set color of other navbar components to black */
+    font-weight: 400; /* Use a lighter font weight */
+    margin-left: 20px; /* Increase spacing between navbar items */
+  }
+  
+  .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1); /* Light border color for toggler */
+  }
+  
+  /* Align logo to the left */
+  .logo {
+    max-width: 60px; /* Reduce logo size */
+    object-fit: contain;
+  }
+  
+  /* Container for profile content */
+  .profile-container {
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; /* Optional: max width for larger screens */
+    background-color: black; /*  background for content */
+    padding: 40px;
+    border-radius: 10px;
+    color: black; /*  text color */
+    font-family: "Rajdhani", sans-serif;
+    margin-top: 40px; /* Increased margin to separate from the navbar */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  }
+  
+  /* Detail item styling */
+  .detail-item {
+    background-color: #BDFFE9; /* Slightly lighter dark background */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid grey; /* Grey border around each detail item */
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .value {
+    margin-left: 10px;
+  }
+  
+  /* Profile picture section */
+  .profile-picture-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centering the content */
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid aquamarine; /* Border around the profile picture */
+    margin-bottom: 15px; /* Space between the picture and the button */
+  }
+  
+  .btn-edit-profile {
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-edit-profile:hover {
+    background-color: #20b2aa; /* Darker shade of aquamarine on hover */
+    color: white;
+  }
+  
+  .list-vehicle-link {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #BDFFE9;
+    text-decoration: none;
+    
+  }
+  
+  .list-vehicle-link:hover {
+    color: #20b2aa; /* Darker shade of aquamarine on hover */
+    text-decoration: underline;
+  }
+  

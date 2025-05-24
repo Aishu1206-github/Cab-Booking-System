@@ -1,0 +1,36 @@
+/* MobileNumber.css */
+.heading {
+    font-size: 16px; /* Default for mobile */
+  }
+
+  .react-select__option {
+    font-size: 12px !important;
+  }
+  .choose{
+    font-size: 15px;
+  }
+
+  .tc{
+    font-size: 13px;
+  }
+  .custom-modal-content {
+    width: 40%;
+  }
+  @media (min-width: 640px) {
+    .heading {
+      font-size: 24px; /* Font size for screens 640px and above (desktop view) */
+    }
+    .react-select__option {
+        font-size: 15px !important;
+      }
+      .choose{
+        font-size: 20px;
+      }
+      .tc{
+        font-size: 16px;
+      }
+      .custom-modal-content {
+        width: 80%;
+      }
+  }
+  

@@ -1,0 +1,16 @@
+.positioned-image {
+  top: 43%;
+  right: 0;
+  transform: translateY(-50%);
+  position: absolute; /* Make sure to include this to maintain the absolute positioning */
+}
+
+
+@media (min-width: 640px){
+  .positioned-image {
+      top: 52%;
+      right: 0;
+      transform: translateY(-50%);
+      position: absolute; /* Make sure to include this to maintain the absolute positioning */
+    }
+ }

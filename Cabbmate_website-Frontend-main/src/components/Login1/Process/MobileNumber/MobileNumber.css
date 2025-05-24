@@ -1,0 +1,11 @@
+.custom-caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+    align-self: center; /* Ensure the caret is centered vertically */
+    vertical-align: middle; /* Align the caret in the middle */
+}

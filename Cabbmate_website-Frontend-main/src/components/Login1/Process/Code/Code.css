@@ -1,0 +1,8 @@
+.custom-placeholder {
+    text-align: center; /* Center align text in the input field */
+  }
+  
+  .custom-placeholder::placeholder {
+    color: #d3d3d3; /* Set placeholder color */
+    text-align: center; /* Center align placeholder text */
+  }

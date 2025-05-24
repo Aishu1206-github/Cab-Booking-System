@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Control</title>
+    <script src="script.js"></script>
+</head>
+<body>
+   
+    ▼<div class="col-md-12 text-center">
+
+        <button id="authButton"  >Authenticate</button>
+        <button id="proceedButton" disabled onclick="annable()"> Proceed</button>     
+        <button type="button" value="Exit" class="btn top-space" onclick="logout(); window.close();" autocomplete="off"></button>
+        </div>
+    <script>
+
+      
+const authButton = document.getElementById('authButton');
+const proceedButton = document.getElementById('proceedButton');
+authButton.addEventListener('click', () => {
+    proceedButton.disabled = false;
+    authButton.disabled =true;
+
+});
+
+/*function annable(){
+  
+    const button = document.getElementById('authButton');
+       button.disabled = true; 
+}*/
+    </script>
+</body>
+</html>

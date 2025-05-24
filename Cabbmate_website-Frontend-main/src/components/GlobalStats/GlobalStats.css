@@ -1,0 +1,107 @@
+/* GlobalStats.css */
+
+/* General styling */
+.page-container {
+    /*margin: 0 10%;  Adds a margin of 10% to both left and right */
+   padding: 0 20px; /* Optional padding for additional spacing inside the container */
+   background-color: black; 
+ }
+ 
+ .global-stats-container {
+   text-align: center;
+   padding: 100px 20px; /* Increased padding to move the content downward */
+ }
+ 
+ .global-stats-title {
+   font-size: 50px;
+   margin: 0 10%;
+   margin-bottom: 60px; /* Increased margin to create space between the title and the stats */
+   color: white;
+   /*text-shadow: 2px 2px 4px rgba(127, 255, 212, 0.6), 4px 4px 8px rgba(127, 255, 212, 0.3);*/
+ }
+ 
+ .stats {
+   display: flex; /* Use flexbox for better control */
+   justify-content: center; /* Center items horizontally */
+   flex-wrap: wrap; /* Wrap items to the next line on small screens */
+ }
+ 
+ .stat-item {
+   display: flex; /* Use flexbox for centering */
+   flex-direction: column;
+   align-items: center; /* Center content horizontally */
+   max-width: 180px;
+   text-align: center;
+   margin: 30px; /* Adjusted margin for spacing between items */
+   /*background: linear-gradient(to bottom, #a0e0e0, #e0f7f7);  Gradient effect */
+   border-radius: 8px; /* Rounded corners */
+   padding: 20px; /* Padding inside the items */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+ }
+ 
+ .stat-icon {
+   display: flex; /* Use flexbox for centering */
+   align-items: center;
+   justify-content: center;
+   font-size: 48px; /* Adjust size as needed */
+   margin-bottom: 15px; /* Adjust margin as needed */
+ }
+ 
+ .stat-icon .fa-icon {
+   color: aquamarine; /* Set the icon color to white */
+   font-size: 48px; /* Adjust size as needed */
+ }
+ 
+ /*.stat-icon .fa-icon {
+   display: inline-block; /* Ensure icon behaves like an inline element but can have dimensions
+   font-size: 48px; /* Adjust size as needed 
+   background: linear-gradient(to bottom, #006a6a, #a0e0e0); /* Gradient effect 
+   -webkit-background-clip: text; /* Clip the background to the text 
+   -webkit-text-fill-color: transparent; /* Make the text color transparent to show gradient 
+   background-clip: text; /* Standard property to clip the background to the text 
+   text-fill-color: transparent; /* Ensure the text fill is transparent 
+ }*/
+ 
+ .stat-item h3 {
+   font-size: 35px;
+   color: aquamarine;
+   margin: 8px 0; /* Slightly reduced margin */
+   /*text-shadow: 1px 1px 2px rgba(127, 255, 212, 0.6), 2px 2px 4px rgba(127, 255, 212, 0.3);*/
+ }
+ 
+ .stat-item p {
+   font-size: 22px;
+   font-weight: 600;
+   color: aquamarine;
+   /*text-shadow: 1px 1px 2px rgba(127, 255, 212, 0.6);*/
+ }
+ 
+ .stat-item small {
+   display: block;
+   margin-top: 8px; /* Reduced margin to bring the small text closer */
+   font-size: 14px;
+   color: aquamarine;
+ }
+ 
+ /* Responsive design for smaller screens */
+ @media (max-width: 768px) {
+   .global-stats-title {
+     font-size: 36px; /* Smaller font size for smaller screens */
+     margin: 0 5%; /* Reduced margin */
+     margin-bottom: 30px; /* Reduced margin */
+   }
+ 
+   .stat-item {
+     max-width: 100%; /* Full width on small screens */
+     margin: 10px; /* Reduced margin */
+   }
+ 
+   .stat-item h3 {
+     font-size: 28px; /* Smaller font size for headers */
+   }
+ 
+   .stat-item p {
+     font-size: 18px; /* Smaller font size for paragraphs */
+   }
+ }
+ 

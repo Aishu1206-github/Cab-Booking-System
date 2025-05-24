@@ -1,0 +1,36 @@
+/* Ensure the wrapper takes full height */
+.step4-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Full height of the parent */
+  }
+  
+  /* Container for both columns */
+  .step4-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Full height of the parent */
+  }
+  
+  /* Fixed height for the first column */
+  .step4-fixed {
+    height: 50px; /* Fixed height for the first column */
+    background-color: #f0f0f0; /* Example background color */
+  }
+  
+  /* Flex-grow for the second column */
+  .step4-image-container {
+    flex-grow: 1; /* Take up remaining vertical space */
+    display: flex;
+    align-items: center; /* Center image vertically */
+    justify-content: center; /* Center image horizontally */
+    background-color: #000; /* Example background color */
+    overflow: hidden; /* Ensure image doesn't overflow */
+  }
+  
+  /* Responsive image styling */
+  .responsive-img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  

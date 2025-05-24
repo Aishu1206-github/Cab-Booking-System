@@ -1,0 +1,17 @@
+.bg{
+    height: 100px;
+}
+.sm{
+    height: 100px;
+}
+
+
+
+@media (min-width: 640px){ 
+    .bg{
+        height: 400px;
+    }
+    .sm{
+        height: 200px;
+    }
+}

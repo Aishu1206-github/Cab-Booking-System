@@ -1,0 +1,19 @@
+.heading {
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .sub_heading {
+    font-size: 15px;
+    font-weight: 600;
+  }
+@media (min-width: 640px){
+    .heading {
+        font-size: 50px;
+        font-weight: 700;
+      }
+      .sub_heading {
+        font-size: 25px;
+        font-weight: 600;
+      }
+   }

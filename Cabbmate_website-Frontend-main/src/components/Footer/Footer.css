@@ -1,0 +1,259 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #131f11;
+  padding: 40px 20px;
+  color: white;
+  position: relative;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 15px;
+}
+
+.footer-column .important {
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.footer-column .important::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: rgb(45, 172, 45);
+  margin-top: 5px;
+}
+
+.footer_logo {
+  width: 60px;
+  height: auto;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.logo-background {
+  background-color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+.company-name {
+  color: rgb(45, 172, 45);
+}
+
+.description {
+  margin: 23px 0 30px;
+  color: #cbd5e0;
+  line-height: 1.6;
+  font-size: 1.03rem;
+}
+
+.consultation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: rgb(45, 172, 45);
+}
+
+.consultation .message {
+  color: rgb(45, 172, 45);
+  font-size: 2.3rem;
+}
+
+.consultation .consultaion_para {
+  margin: 0;
+  font-weight: bold;
+}
+
+.consultation-link {
+  color: rgb(45, 172, 45);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: flex-start;
+}
+
+.social-icons .icon {
+  color: #cbd5e0;
+  font-size: 24px;
+  transition: color 0.3s;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+.social-icons a:nth-child(1) {
+  background-color: blue;
+  text-align: center;
+}
+
+.social-icons a:nth-child(2) {
+  background-color: rgb(99, 99, 232);
+}
+
+.social-icons a:nth-child(3) {
+  background-color: grey;
+}
+
+.social-icons a:nth-child(4) {
+  background-color: orangered;
+}
+
+/*.social-icons a:hover {
+  color: rgb(45, 172, 45);
+}*/
+
+.links-list {
+  list-style-type: disc;
+  padding: 0;
+  margin: 30px 15px;
+}
+
+.links-list .navbar_link {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: #cbd5e0;
+  transition: color 0.3s;
+}
+
+.links-list a:hover {
+  color: rgb(45, 172, 45);
+}
+
+.contact-column .contact_title {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* .contact-column .contact_title::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #00b4d8;
+  margin-top: 5px;
+} */
+
+.contact-column .contact_links {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.contact-column span {
+  margin-right: 20px;
+  color: rgb(45, 172, 45);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-column {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .logo-container {
+    justify-content: flex-start;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .social-icons .icon {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-name {
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .consultation {
+    font-size: 16px;
+  }
+
+  .social-icons .icon {
+    font-size: 20px;
+  }
+}
+
+/* Add this new media query for iPad Air */
+@media (min-width: 768px) and (max-width: 1180px) {
+  .footer {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .footer-column {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+    margin: 0;
+  }
+
+  .description {
+    font-size: 1rem;
+    margin: 20px 0 25px;
+  }
+
+  .consultation .message {
+    font-size: 2rem;
+  }
+
+  .social-icons {
+    gap: 15px;
+    margin-top: 35px;
+  }
+
+  .social-icons .icon {
+    font-size: 20px;
+    padding: 4px 8px;
+  }
+
+  .links-list {
+    margin: 25px 15px;
+  }
+
+  .links-list .navbar_link {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,144 @@
+.pending-rides-container {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  background: black;
+  color: white;
+}
+
+.pending-rides-header {
+  color: rgb(45, 172, 45);
+  margin-bottom: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+.pending-rides-description {
+  color: white;
+  margin-bottom: 70px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.pending-rides-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.pending-ride-card {
+ background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.pending-ride-card:hover {
+  transform: translateY(-5px);
+}
+
+.ride-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ride-info-header h3 {
+  color: rgb(45, 172, 45);
+  margin: 0;
+}
+
+.ride-fare {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+.ride-details {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.location-info {
+  margin-bottom: 15px;
+}
+
+.pickup, .dropoff {
+  margin: 8px 0;
+}
+
+.label {
+  color: #666;
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.value {
+  font-weight: 400;
+  color: white;
+}
+
+.time-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.time-info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.accept-btn, .decline-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  flex: 1;
+  transition: background-color 0.2s ease;
+}
+
+.accept-btn {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.accept-btn:hover {
+  background-color: #1557b0;
+}
+
+.decline-btn {
+  background-color: rgb(45, 172, 45);
+  color: white;
+}
+
+.decline-btn:hover {
+  background-color: #1557b0;
+}
+
+@media (max-width: 768px) {
+  .pending-rides-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pending-rides-header {
+    font-size: 1.5rem;
+  }
+}

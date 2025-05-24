@@ -1,0 +1,20 @@
+.dot-icon {
+  display: inline-block;
+  width: 10px; /* Set the size of the dot */
+  height: 10px; /* Set the size of the dot */
+  background-color: green; /* Set the color of the dot */
+  border-radius: 50%;
+  margin-right: 5px; /* Makes the element a circle */
+}
+
+.dot-icon1 {
+  display: inline-block;
+  width: 10px; /* Set the size of the dot */
+  height: 10px; /* Set the size of the dot */
+  background-color: red; /* Set the color of the dot */
+  border-radius: 50%; /* Makes the element a circle */
+}
+
+.color {
+  color: rgb(45, 172, 45);
+}

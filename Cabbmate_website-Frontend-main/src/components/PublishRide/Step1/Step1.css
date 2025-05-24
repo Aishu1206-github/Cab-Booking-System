@@ -1,0 +1,147 @@
+.step1-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.step1-card-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #231f16;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #231f16;
+}
+
+.custom-input {
+  padding: 17px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  color: white !important;
+  outline: none;
+  background-color: transparent;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.custom-input::placeholder {
+  color: #fff !important;
+}
+
+.custom-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.swap-icon {
+  cursor: pointer;
+  color: #007bff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.swap-icon:hover {
+  transform: scale(1.2);
+}
+
+.map-container {
+  position: relative;
+  min-height: 370px;
+  height: calc(100% - 40px);
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  background-color: #231f16;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .step1-card-content {
+    padding: 15px;
+  }
+  .map-container {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .map-container {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .step1-card-content {
+    padding: 15px;
+    height: 45vh;
+  }
+
+  .custom-input {
+    width: 80%;
+    max-width: 600px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  .step1-card-content {
+    padding: 15px;
+  }
+
+  .custom-input {
+    width: 80%;
+    max-width: 600px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .step1-card-content {
+    padding: 10px;
+  }
+
+  .custom-input {
+    width: 90%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .step1-card-content {
+    padding: 10px;
+  }
+
+  .custom-input {
+    width: 90%;
+    font-size: 16px;
+  }
+}

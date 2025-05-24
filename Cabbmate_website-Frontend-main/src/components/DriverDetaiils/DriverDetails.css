@@ -1,0 +1,263 @@
+.driver {
+    background-color: #231f16;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: clamp(1rem, 3vw, 2rem);
+    gap: clamp(1rem, 2vw, 2rem);
+    opacity: 0;
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+.driver_title h2{
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: green;
+  cursor: pointer;
+}
+
+.driver_button_container{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.driver_button{
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.driver .driver_details, .car_details {
+    flex: 1;
+    max-width: 45%;
+    padding: 1rem 1.5rem;
+    background: rgba(47, 42, 35, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.driver .driver_details:hover, .car_details:hover {
+    transform: translateY(-5px);
+}
+
+.driver_details h2, .car_details h2 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+    margin-bottom: 15px;
+    color: #59dab2;
+    text-align: center;
+}
+
+.driver_form {
+    padding: 1.5rem;
+    background-color: rgba(19, 31, 17, 0.95);
+    border: 1px solid rgba(68, 68, 68, 0.5);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.driver_form:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.driver_form .input_box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input_box label {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.input_box input, .number select, .number input {
+    padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(0.75rem, 2vw, 1rem);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: rgba(58, 52, 48, 0.95);
+    color: #eee;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    transition: all 0.3s ease;
+}
+
+.input_box input:focus, .number select:focus, .number input:focus {
+    outline: none;
+    border-color: #59dab2;
+    box-shadow: 0 0 0 2px rgba(89, 218, 178, 0.2);
+    transform: translateY(-1px);
+}
+
+.number {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.number select {
+    padding: 3px;
+    background-color: #3a3430;
+    color: #eee;
+    border: none;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+.number input {
+    flex: 1;
+    padding: 10px;
+    background-color: #3a3430;
+    color: #eee;
+    border: none;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+}
+
+.number select:focus, .number input:focus {
+    border: 1px solid #59dab2;
+}
+
+.input_box input::placeholder {
+    color: #999;
+}
+
+.car_details span, .input_box label span {
+    color: red;
+}
+
+.recommended_price {
+    font-size: 1.2rem;
+    padding: 8px;
+    color: #59dab2;
+    text-align: center;
+    border: 2px solid #59dab2;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.error-input {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: block;
+}
+
+#car_option{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #3a3430;
+    color: #eee;
+    font-size: 1rem;
+    border: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .driver .driver_details, .car_details {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .driver .driver_details, .car_details {
+        max-width: 48%;
+        padding: clamp(1rem, 2vw, 1.5rem);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .driver {
+        flex-direction: column;
+        align-items: center;
+        padding: clamp(1rem, 3vw, 1.5rem);
+        gap: clamp(1rem, 2vw, 1.5rem);
+    }
+    
+    .driver .driver_details, .car_details {
+        max-width: 95%;
+        width: 100%;
+        margin-bottom: clamp(1rem, 2vw, 1.5rem);
+    }
+    
+    .driver_title h2 {
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .driver_details h2, .car_details h2 {
+        font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    }
+    
+    .input_box {
+        margin-bottom: clamp(10px, 2vw, 15px);
+    }
+    
+    .driver_button_container {
+        gap: clamp(15px, 3vw, 30px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .driver {
+        padding: clamp(0.8rem, 2vw, 1rem);
+        min-height: auto;
+        height: 100%;
+    }
+    
+    .driver .driver_details, .car_details {
+        max-width: 100%;
+        padding: clamp(0.8rem, 2vw, 1rem);
+    }
+    
+    .input_box input, .number select, .number input {
+        padding: clamp(0.4rem, 1.5vw, 0.75rem);
+        font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+    }
+    
+    .number {
+        flex-direction: column;
+        gap: clamp(8px, 1.5vw, 10px);
+    }
+    
+    .driver_button {
+        padding: clamp(8px, 2vw, 15px) clamp(15px, 3vw, 20px);
+        font-size: clamp(0.9rem, 1.5vw, 1rem);
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .driver {
+        min-height: 100%;
+        padding: 0.8rem;
+    }
+    
+    .driver_title h2 {
+        font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+        margin-bottom: 15px;
+    }
+}

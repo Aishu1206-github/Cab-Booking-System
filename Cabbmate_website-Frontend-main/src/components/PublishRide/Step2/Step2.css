@@ -1,0 +1,168 @@
+.step2-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 120vh;
+  max-height: 120vh;
+}
+
+.step2-content {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  background-color: #2f2b26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.map-placeholder {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.step2-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #231f16;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  gap: 30px;
+}
+
+.left-side {
+  flex: 1;
+  color: white;
+}
+
+.left-side h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.left-side p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.right-side {
+  flex: 1;
+  max-width: 500px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.stop-point {
+  background-color: #131f11;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.add-stop-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.stop-input {
+  width: 70%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+.stop-input:focus {
+  border-color: #2f3b52;
+}
+
+.add-stop-btn {
+  padding: 12px 20px;
+  background-color: #2f3b52;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-stop-btn:hover {
+  background-color: #1e2b3c;
+}
+
+@media (max-width: 768px) {
+  .step2-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 140vh;
+    margin-bottom: 30px;
+  }
+  .step2-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-side p {
+    display: none;
+  }
+
+  .stop-input {
+    width: 80%;
+  }
+
+  .add-stop-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .add-stop-btn{
+    font-size: 14px;
+  }
+  .add-stop-btn span{
+    display: none;
+  }
+}

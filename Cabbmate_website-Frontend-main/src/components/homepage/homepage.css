@@ -1,0 +1,64 @@
+.homepage-container {
+  background-color: #1110109e;
+  width: 100%;
+}
+
+.text-\[\#111010\] {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  --tw-text-opacity: 1;
+  color: rgb(17 16 16 / var(--tw-text-opacity));
+}
+
+.text-green-600 {
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  --tw-text-opacity: 1;
+  color: green;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  font-size: 18px;
+  color: #222;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #fbbd24;
+}
+
+.navbar-light .navbar-nav .dropdown-menu {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .dropdown-item {
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3 ease;
+}
+/* Hover effect for dropdown items */
+.navbar-light .navbar-nav .dropdown-item:hover {
+  background-color: #4cb03a;
+  color: white;
+}
+
+.navbar-light .navbar-nav .nav-link i {
+  font-size: 20px;
+  color: #222;
+  margin-left: 15px;
+}
+
+.main_color {
+  background-color: #59dab2;
+}
+
+.hidden-overflow {
+  overflow: hidden;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
